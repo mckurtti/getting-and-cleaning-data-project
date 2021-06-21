@@ -69,3 +69,7 @@ FinalData <- arrange(FinalData, Subject, ActivityDescription)
 
 TidyDataFrame <- FinalData %>% group_by(ActivityDescription, Subject) %>%
         summarise_all(funs(mean))
+
+##### Write Final DataFrame into .txt File #####
+
+write.table(TidyDataFrame, "./TidyData.txt", row.names = FALSE, quote = FALSE)
