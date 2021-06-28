@@ -77,4 +77,4 @@ TidyDataFrame <- TgtData %>% group_by(activity, subject) %>%
 
 ##### Write Final DataFrame into .txt File #####
 
-write.table(TidyDataFrame, "./TidyData.txt", row.names = FALSE, quote = FALSE)
+write.table(TidyDataFrame, "./Tidy.Data.txt", row.names = FALSE, quote = FALSE)
